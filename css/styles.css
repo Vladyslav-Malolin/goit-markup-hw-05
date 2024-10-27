@@ -776,6 +776,10 @@ img {
   margin-bottom: 8px;
 }
 
+.modal-text-area {
+  margin-bottom: 16px;
+}
+
 
 .input-wrapper {
   position: relative;
@@ -823,7 +827,11 @@ img {
   align-items: center;
 }
 
-.check-box-label span {
+.check-box-span {
+  display: inline-flex;
+}
+
+.check-box-span .check-box-label span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -837,7 +845,7 @@ img {
 
 }
 
-.modal-chek:checked+.check-box-span {
+.modal-chek:checked+span {
   fill: #404bbf;
   border: 1px solid #404bbf;
   border: none;
