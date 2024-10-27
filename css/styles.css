@@ -575,10 +575,10 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: ffffff;
+  color: #ffffff;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background-color: #4d5ae5;
   display: flex;
@@ -646,7 +646,7 @@ img {
 .footer-button-close {
   width: 24px;
   height: 24px;
-  border: radius 50px;
+  border-radius: 50%;
   fill: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   margin-left: 336px;
@@ -666,12 +666,12 @@ img {
 }
 
 .footer-button-close:hover {
-  fill: #404bbf;
+  background-color: #404bbf;
   border: none
 }
 
 .footer-button-close:focus {
-  fill: #404bbf;
+  background-color: #404bbf;
   border: none
 }
 
@@ -680,11 +680,11 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-button-close:hover+.modal-icon-close {
+.footer-button-close:hover .modal-icon-close {
   fill: #ffffff;
 }
 
-.footer-button-close:focus+.modal-icon-close {
+.footer-button-close:focus .modal-icon-close {
   fill: #ffffff;
 }
 
@@ -761,7 +761,7 @@ img {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.commet:focus {
+.comment:focus {
   border-color: #4d5ae5;
 }
 
@@ -773,7 +773,7 @@ img {
 }
 
 .modal-field {
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 
@@ -824,7 +824,7 @@ img {
 }
 
 .check-box-label span {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   height: 16px;
@@ -832,7 +832,7 @@ img {
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   margin-right: 8px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: transparent;
 
 }
@@ -847,13 +847,6 @@ img {
 
 .check-box {
   margin-bottom: 24px;
-}
-
-
-
-.check-box-span {
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-flex;
 }
 
 .modal-link {
