@@ -840,8 +840,11 @@ img {
   display: inline-flex;
 }
 
+.modal-check-icon {
+  display: inline-flex;
+}
 
-.modal-chek:checked .check-box-span {
+.modal-chek:checked .modal-check-icon {
   fill: #F4F4FD;
   background-color: #404bbf;
   border: none;
