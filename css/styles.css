@@ -828,7 +828,6 @@ img {
 }
 
 .check-box-span {
-
   align-items: center;
   justify-content: center;
   height: 16px;
@@ -841,9 +840,8 @@ img {
   display: inline-flex;
 }
 
-.check-box-span .check-box-label span {}
 
-.modal-chek:checked+.check-box-span {
+.modal-chek:checked .check-box-span {
   fill: #F4F4FD;
   background-color: #404bbf;
   border: none;
